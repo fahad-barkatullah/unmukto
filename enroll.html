@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enroll - Unmukto Educare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="enroll-bg">
+    <div class="container transparent-form">
+        <h1>📝 Enrollment Form</h1>
+        <form name="enroll" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="enroll">
+
+            <label>👤 Name:</label>
+            <input type="text" name="name" required>
+
+            <label>📧 Email:</label>
+            <input type="email" name="email" required>
+
+            <label>📱 Phone:</label>
+            <input type="tel" name="phone" required>
+
+            <label>📘 Subjects:</label><br>
+            <label><input type="checkbox" name="subjects" value="Physics"> Physics</label>
+            <label><input type="checkbox" name="subjects" value="Chemistry"> Chemistry</label>
+            <label><input type="checkbox" name="subjects" value="Maths"> Maths</label>
+            <label><input type="checkbox" name="subjects" value="Biology"> Biology</label>
+            <p id="amountText">💰 Total: 0 BDT</p>
+
+            <p class="highlight-text">🔔 Please use "Send Money" option for payment.</p>
+
+            <label>💳 Payment Method:</label><br>
+            <label><input type="radio" name="payment" value="bkash"> bKash</label>
+            <label><input type="radio" name="payment" value="rocket"> Rocket</label>
+
+            <label>🧾 Transaction ID:</label>
+            <input type="text" name="txnId" required>
+
+            <button type="submit">✅ Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
